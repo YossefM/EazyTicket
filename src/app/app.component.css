@@ -1,0 +1,106 @@
+
+li:hover {
+background-color:rgba(128, 128, 126, 0.1);
+}
+
+.navbar-default .navbar-nav>li>a {
+   font-size:20px; 
+}
+
+.header_nav {
+    z-index: 99999;
+    color: white;
+    width:100%;
+    background-color:transparent !important;
+    position:fixed;
+    top:0;
+    left:0;
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+}
+
+
+.tabs{
+    position: relative;
+    color: white;
+    background: rgba(255,255,255,0) !important;
+    font-size: 18px;
+    height:80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+    border: 2px solid transparent;
+}
+
+.tabs:hover{
+    text-shadow: 1px 0px 20px white;
+    background: rgba(255,255,255,0.1) !important;
+    /* border-bottom: 2px solid #c9302f; */
+    box-shadow: 0 8px 6px -6px #c9302f;
+}
+
+.header_nav--big, .tabs_before {
+    height:80px;  
+}
+
+.header_nav--small, .tabs_after {
+     height:50px;
+}
+
+.tabs_after{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_nav--small{
+    background: rgba(128, 128, 126, 0.3) !important;
+}
+.table-hover tbody tr:hover td {
+    background: black;
+}
+.imgsize{
+    position: absolute;
+    margin: auto;
+    right: 50%;
+    bottom: 50%;
+      -webkit-transition:0.5s linear all;
+   -moz-transition:0.5s linear all;
+   -o-transition:0.5s linear all;
+   transition:0.5s linear all;
+}
+
+.header_nav--bigimage {
+    position: relative;
+    margin: auto;
+        height:60px;   
+        border-radius:50%;
+        border:2.2px solid darkred;
+}
+
+.header_nav--smallimage {
+    position: relative;
+    margin: auto;
+        height:30px;
+        border-radius:50%;
+        border:2px solid darkred;  
+}
+
+#cart:hover{
+    text-shadow: 1px 0px 20px #c9302f !important;
+}
+
+img:hover{
+    box-shadow: 1px 0px 40px darkred !important;
+}
+.aligner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

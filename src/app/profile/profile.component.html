@@ -1,0 +1,38 @@
+<div id="pro" class="panel panel-default profile-area">
+  <div class="panel-heading">
+    <h3>Profile</h3>
+  </div>
+  <div class="panel-body">
+    <img src="{{profile?.picture}}" class="avatar" alt="avatar">
+    <div>
+      <label><i class="glyphicon glyphicon-user"></i> Nickname</label>
+      <h3 class="nickname">{{ profile?.nickname }}</h3>
+    </div>
+    <div>
+      <label><i class="glyphicon glyphicon-mail"></i> E-mail</label>
+      <h3 class="nickname">{{ profile?.email }}</h3>
+    </div>
+    <br>
+    
+    <div class="jumbo" id="comment">
+    <h3>Please leave a comment..</h3>
+    <br>
+ <p class="comment-form-comment">
+    <label for="Name" style="color:black ; ">Name</label><br>
+  <input id="Name" name="Name" type="text" class="form-control" required [(ngModel)]="Name" placeholder='Enter your Name here...'
+  style="color:black; margin: 0px; width: 50%; height: 10%;left:45%; border-radius:4px; outline:none; resize: none;" /><br>
+
+
+  <label for="Issue" style="color:black; font-size:50%">Issue</label><br>
+  <input id="Issue" name="Issue" type="text" class="form-control" required [(ngModel)]="Issue"placeholder='Enter your Issue here...'
+    style="color:black; margin: 0px; width: 50%; height: 10%;left:45%; border-radius:4px; outline:none; resize: none;" /><br>
+  <label for="Comment" style="color:black;">Comment</label><br>
+
+  <textarea id="Comment" name="Comment" type="text" class="form-control" required [(ngModel)]="Comment"
+  placeholder='Enter your comment here...' cols="45" rows="8"
+   maxlength="65525" aria-required="true" required="required"
+  style="color:black; margin: 0px; width: 50%; height: 10%; border-radius:4px; outline:none; resize: none;"></textarea></p>
+ <button  class="btn btn" style="color:black" (click)="clickHandlerPost()">Post</button>
+</div>
+  </div>
+</div>

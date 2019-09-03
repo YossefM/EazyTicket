@@ -1,0 +1,22 @@
+<div id="bk" *ngIf= "!loadOk" class="Ids-css ng-scope">
+ 
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Issue</th>
+                <th>Comment</th>
+                 <th *ngIf="auth.authenticated() && role">Delete</th>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of arComments">
+                   <td>{{item.Name}}</td>
+                <td>{{item.Issue}}</td>
+                <td>{{item.Comments}}</td>
+                <button *ngIf="auth.authenticated() && role" (click)="Delete(item)" class="btn btn" 
+                >Delete</button>
+            </tr>
+        </tbody>
+    </table>
+</div>

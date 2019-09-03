@@ -1,0 +1,201 @@
+
+/*##### Global Classes #####*/
+* {margin: 0;padding: 0;}
+body { background: url("./assets/images/dark_mosaic.png");
+font-family: 'Raleway', sans-serif;
+}
+
+.clearfix {clear: both;}
+.center {text-align: center;}
+.left {text-align: left;}
+.right {text-align: right;}
+
+.clr1 {background: #FFFFFF; color: #FFFFFF;}
+.clr2 {background: #F1F3F5; color: #c9302f;}
+.clr3 {background: rgba(128, 128, 126, 0.5); color: #c9302f;}
+.clr4 {background: rgba(128, 128, 126, 0.8); color: #FFFFFF;}
+.clr5 {background: ; color: #F1F3F5;}
+.clr6 {background: ; color: #39B5A1;}
+.clr7 {background: ; color: #D45245;}
+
+a {color: #FFFFFF; text-decoration: none !important;}
+a:hover {color: #ffffff; text-decoration: none !important;}
+a:active {color: #ffffff; text-decoration: none !important;}
+a:visited{text-decoration: none !important;}
+
+/*##### Footer Structure #####*/
+.bo-wrap {clear:both; width: auto;}
+.bo-footer {
+  clear:both;
+  width: auto;
+  padding: 5px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.bo-footer-social {text-align: center; line-height: 1px;}
+
+.bo-footer-smap {
+  width: 300px;
+  float: left;
+  padding: 5px 10px;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom:0px;
+}
+
+.bo-footer-uonline {
+  width: 300px; /* Account for margins + border values */
+  float: left;
+  padding: 5px 10px;
+  text-align: center;
+  margin-bottom:0px;
+}
+
+.bo-footer-power {
+  width: 300px;
+  padding: 5px 10px;
+  float: left;
+  text-align: right;
+  font-size: 14px;
+  color: #FFFFFF;
+  vertical-align: middle;
+  margin-bottom:0px;
+}
+
+.bo-footer-copyright {text-align: center; color: #FFFFFF;}
+
+/*##### Footer Responsive #####*/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+  
+  .bo-footer {
+    width: 95%;
+        padding: 1% 2%;
+        margin-bottom:0px;
+  }
+  .bo-footer-smap {
+    width: 46%;
+        padding: 1% 2%;
+        margin-bottom:0px;
+  }
+  .bo-footer-uonline {
+    width: 46%;
+    padding: 1% 2%;
+    float: right;
+    text-align: right;
+    margin-bottom:0px;
+  }
+  
+  .bo-footer-power {
+    clear: both;
+    padding: 1% 2%;
+    width: auto;
+    float: none;
+    text-align: center;
+    margin-bottom:0px;
+  }
+}
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+  .bo-footer-smap {
+    width: auto; 
+    float: none;
+    text-align: center;
+  }
+  
+  .bo-footer-uonline {
+    width: auto;
+    float: none;
+    text-align: center;
+  }
+  
+  .bo-footer-power {
+    width: auto;
+    float: none;
+    text-align: center;
+  }
+
+}
+
+/* Custom Spinner */
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+  
+}
+@keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes lds-dual-ring_reverse {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes lds-dual-ring_reverse {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+.lds-dual-ring {
+  position: relative;
+}
+.lds-dual-ring div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 70px;
+  left: 70px;
+  border-radius: 50%;
+  border: 4px solid #000;
+  border-color: #aa000d transparent #aa000d transparent;
+  -webkit-animation: lds-dual-ring 1s linear infinite;
+  animation: lds-dual-ring 1s linear infinite;
+}
+.lds-dual-ring div:nth-child(2) {
+  width: 48px;
+  height: 48px;
+  top: 76px;
+  left: 76px;
+  border-color: transparent #f44336 transparent #f44336;
+  -webkit-animation: lds-dual-ring_reverse 1s linear infinite;
+  animation: lds-dual-ring_reverse 1s linear infinite;
+}
+.lds-double-ring {
+  width: 200px !important;
+  height: 200px !important;
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+#loader{
+    position:absolute;left:45%;top:45%;
+}
+  

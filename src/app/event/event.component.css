@@ -1,0 +1,72 @@
+/* Pen-specific styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  line-height: 150%;
+  text-shadow: 0 2px 2px #b6701e;
+}
+
+section {
+  color: #fff;
+  text-align: center;
+}
+
+div {
+  height: 100%;
+}
+
+article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  color:white;
+  font-size: 60px;
+  margin: 0 0 0.75rem 0;
+}
+
+p{
+  font-size: 20px;
+}
+
+/* Pattern styles */
+.container {
+  display: table;
+  width: 100%;
+}
+
+.left-half {
+  background: url("../../assets/images/music.jpg");
+  position: absolute;
+  left: 0px;
+  width: 50%;
+  -webkit-filter: brightness(100%);
+}
+
+.right-half {
+    background: url("../../assets/images/bwstandup.jpg");
+  position: absolute;
+  background-size:cover;
+  right: 0px;
+  width: 50%;
+  -webkit-filter: brightness(100%);
+}
+
+.left-half:hover, .right-half:hover {
+  text-shadow: 1px 0px 20px white;
+    cursor: pointer;
+    -webkit-filter: brightness(30%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}

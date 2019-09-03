@@ -1,0 +1,33 @@
+    img{
+        position: relative;
+        height: 30%;
+        width: 100% !important;
+    }
+    h1{
+        color:white;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-size: 62px;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        color:white;
+        font-size: 45px;
+    }
+    h4{
+        font-family: 'Raleway', sans-serif;
+        color:darkorange;
+        font-size: 24px;
+    }
+    h5{
+        font-family: 'Raleway', sans-serif;
+        color:#c9302f;
+        font-size: 20px;
+    }
+    .wrap{
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .container{
+        width: 75%;
+    }
+    

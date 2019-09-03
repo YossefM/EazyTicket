@@ -1,0 +1,14 @@
+.profile-area img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.panel-body h3 {
+  margin-top: 0;
+}
+   h1{
+    text-align: center;
+    font-size:45px;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+}

@@ -1,0 +1,79 @@
+
+<div id="bk" *ngIf= "!loadOk" class="Ids-css ng-scope">
+<button (click)="search=!search" type="button" class="btn" style="background-color:darkred">Search</button>
+        <input style="width:25%" class="form-control" *ngIf="search" type="text" [(ngModel)]="term">
+<table class="table table-hover">
+    <thead>
+        <tr>
+    
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Alias</th>
+<th *ngIf="auth.authenticated() && role">Delete</th>
+    </thead>
+    <tbody>
+         <tr *ngFor="let item of arPerformer |filter:term">
+    
+            <td>{{item.Name}}</td>
+            <td>{{item.Genre}}</td>
+            <td>{{item.Email}}</td>
+            <td>{{item.Country}}</td>
+             <td>{{item.Alias}}</td>
+              <td *ngIf="auth.authenticated() && role" (click)="Delete(item)"   [style.cursor]="(mouseover)?'default':'pointer'">Delete</td>
+
+
+        </tr>
+    </tbody>
+</table>
+<br>
+<button class="btn btn" style="color:black" (click)="show=!show">{{show ? 'Add Performer' : 'Add Performer'}}</button><br>
+
+<div *ngIf="show" class="col-md-6 col-md-offset-3">
+    <h2>New Performer</h2>
+    <form #trvForm1="ngForm" (ngSubmit)="clickHandlerPost()">
+
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input id="Name" name="Name" type="text" class="form-control" required  [(ngModel)]="Name"
+                #trvName="ngModel" >
+           
+        </div>
+
+
+        <div class="form-group">
+            <label for="Genre">Genre</label>
+            <input id="Genre" name="Genre" type="text" class="form-control" required  [(ngModel)]="Genre"
+                #trvGenre="ngModel" >
+            
+        </div>
+
+
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input id="Email" name="Email" type="email" class="form-control" required  [(ngModel)]="Email"
+                #trvEmail="ngModel" >
+            
+        </div>
+
+        <div class="form-group">
+            <label for="Country">Country</label>
+            <input id="Country" name="Country" type="text" class="form-control" required 
+          
+                [(ngModel)]="Country" #trvCountry="ngModel">
+           
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="Alias">Alias</label>
+            <input id="Alias" name="Alias" type="text"  class="form-control" required  [(ngModel)]="Alias"
+                #trvAlias="ngModel">
+            
+        </div>
+        <button [disabled]="!trvForm1.valid" (click)="clickHandlerPost(trvForm1)" class="btn btn">Add Performer</button>
+    </form>
+</div>
+</div>

@@ -1,0 +1,23 @@
+
+    .wrap{
+        margin-left: 20%;
+    }
+    h1{
+    text-align: center;
+    font-size:45px;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+}
+    #map{
+        color: #c9302f;
+    }
+    #phone{
+        color: #4caf50;
+    }
+    #mik{
+        color: dodgerblue;
+    }
+    img{
+        height:160px;
+        width:160px;
+    }
